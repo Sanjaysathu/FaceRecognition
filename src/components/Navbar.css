@@ -1,0 +1,10 @@
+.header{
+    width: 100%;
+    height: 10vh;
+}
+
+h3{
+    float: right;
+    color: coral;
+    margin-right: 10px;
+}
