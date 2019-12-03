@@ -9,7 +9,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import SignIn from './components/Sign in';
 import Clarifai from 'clarifai';
 import Register from './components/Register';
-import createBrowserHistory from 'history/createBrowserHistory';
+import createHistory from 'history/createBrowserHistory';
 
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
 
   
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
     <div>
       <Switch>
 
