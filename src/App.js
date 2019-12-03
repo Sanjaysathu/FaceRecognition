@@ -5,10 +5,11 @@ import Inputlink from './components/Inputlink';
 import Image from './components/Image';
 import './App.css';
 import Particle from './components/Particle';
-import {HashRouter,Route,Switch} from 'react-router-dom';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import SignIn from './components/Sign in';
 import Clarifai from 'clarifai';
 import Register from './components/Register';
+import createBrowserHistory from 'history/createBrowserHistory';
 
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
 
   
   return (
-    <HashRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div>
       <Switch>
 
@@ -73,7 +74,7 @@ function App() {
 
       </Switch>
     </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
