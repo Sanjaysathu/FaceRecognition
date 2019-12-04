@@ -5,7 +5,7 @@ import './Inputlink.css';
 const Inputlink = ({onsubmit,onchange,value}) => {
     return(
         <div>
-            
+        <h2 className="tc">It will detect a face in an image.Give it a try :)</h2>
         <div className="flex justify-center">
         <div className="inputtext flex justify-center">
             <input type="text" onChange={onchange} value={value} className="w-75"/>
